@@ -1,0 +1,54 @@
+{
+  "inbounds": [
+    { "type": "mixed", "tag": "in-1", "listen": "127.0.0.1", "listen_port": 10001 },
+    { "type": "mixed", "tag": "in-2", "listen": "127.0.0.1", "listen_port": 10002 },
+    { "type": "mixed", "tag": "in-3", "listen": "127.0.0.1", "listen_port": 10003 },
+    { "type": "mixed", "tag": "in-4", "listen": "127.0.0.1", "listen_port": 10004 }
+  ],
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "node-1",
+      "server": "31.128.32.98",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": { "enabled": true, "server_name": "sni.111000.v6.navy" },
+      "transport": { "type": "ws", "path": "/", "headers": { "Host": "sni.111000.v6.navy" } }
+    },
+    {
+      "type": "vless",
+      "tag": "node-2",
+      "server": "77.221.152.21",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": { "enabled": true, "server_name": "sni.111000.v6.navy" },
+      "transport": { "type": "ws", "path": "/?ed=2560fp=chrome", "headers": { "Host": "sni.111000.v6.navy" } }
+    },
+    {
+      "type": "vless",
+      "tag": "node-3",
+      "server": "185.82.126.185",
+      "server_port": 2053,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": { "enabled": true, "server_name": "sni.111000.v6.navy" },
+      "transport": { "type": "ws", "path": "/", "headers": { "Host": "sni.111000.v6.navy" } }
+    },
+    {
+      "type": "vless",
+      "tag": "node-4",
+      "server": "103.90.75.41",
+      "server_port": 2053,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": { "enabled": true, "server_name": "sni.111000.indevs.in" },
+      "transport": { "type": "ws", "path": "/?ed=2560&Telegram🇨🇳@WangCai2", "headers": { "Host": "sni.111000.indevs.in" } }
+    }
+  ],
+  "route": {
+    "rules": [
+      { "inbound": "in-1", "outbound": "node-1" },
+      { "inbound": "in-2", "outbound": "node-2" },
+      { "inbound": "in-3", "outbound": "node-3" },
+      { "inbound": "in-4", "outbound": "node-4" }
+    ]
+  }
+}
