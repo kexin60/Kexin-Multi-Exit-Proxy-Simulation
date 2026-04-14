@@ -1,7 +1,7 @@
 # Kexin-Multi-Exit-Proxy-Simulation
 
 # Modules
-- Proxy_Reachability_Testing [test_proxies.py.py](test_proxies.py.py)   
+- Proxy_Reachability_Testing [test_proxies.py](test_proxies.py)   
 This module implements a concurrent proxy reachability testing tool for Clash-style configurations.  
 It parses proxy lists, performs TCP connectivity checks, and filters unreachable nodes efficiently.  
 The script supports parallel execution and outputs structured JSON reports for further analysis.
