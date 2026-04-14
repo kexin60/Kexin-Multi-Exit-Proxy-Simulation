@@ -16,9 +16,12 @@ This configuration defines multiple inbound proxy ports and maps them to differe
 It enables local multi-port routing and serves as the foundation for multi-exit simulation experiments.
 
 # Data & Results
-- Proxy_Test_Results [proxies_report.json](proxies_report.json)    
-This file contains the output of proxy connectivity testing, including server reachability status.  
-It can be used for filtering valid nodes and analyzing proxy reliability across regions.
+This project performs proxy connectivity testing across multiple nodes and regions.
+Key observations:
+- A significant portion of proxy nodes are reachable via TCP connectivity checks
+- Proxy reliability varies across different regions
+- The testing framework effectively filters unstable or unreachable nodes
+Raw outputs are generated automatically by the testing scripts.
 
 # External Dependencies & Credits
 
