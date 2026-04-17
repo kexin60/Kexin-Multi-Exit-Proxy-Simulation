@@ -6,15 +6,9 @@ This module implements a concurrent proxy reachability testing tool for Clash-st
 It parses proxy lists, performs TCP connectivity checks, and filters unreachable nodes efficiently.  
 The script supports parallel execution and outputs structured JSON reports for further analysis.
 
-- Multi_Exit_Routing_Simulation 
+- Multi_Exit_Routing_Simulation   
 This module simulates multi-exit network routing by mapping multiple local proxy ports to different outbound nodes.
 It launches parallel browser instances using Playwright, each routed through a separate proxy, enabling real-time verification of exit IP behavior.
-
-The system supports:
-Headless and visible browser modes
-Fast-loading optimizations (resource blocking)
-Configurable multi-port experiments
-This project includes two implementations with different levels of complexity:
 
 Simple Version [double_ip_simple.py](double_ip_simple.py) 
 A lightweight implementation designed for quick proxy validation and IP checking.
