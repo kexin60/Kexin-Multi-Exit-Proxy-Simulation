@@ -11,13 +11,13 @@ Simple Version [double_ip_simple.py](double_ip_simple.py)
 A lightweight implementation designed for quick proxy validation and IP checking.
 It focuses on reliability and minimal configuration, making it suitable for basic network testing scenarios.  
 Advanced Version [double_ip_advanced.py](double_ip_advanced.py)     
-An extended version with enhanced browser automation capabilities, including:
-Browser fingerprint randomization (User-Agent, viewport, timezone)
-Persistent session management (per-port profiles)
-Anti-detection techniques (stealth mode, script injection)
-Human behavior simulation (mouse movement, scrolling, typing patterns)
-Flexible execution modes (incognito, deep-stealth, text-only loading)
-This version is designed for more complex scenarios such as automation under detection constraints, multi-session simulation, and realistic browsing behavior emulation.
+An extended version with enhanced browser automation capabilities, including:  
+Browser fingerprint randomization (User-Agent, viewport, timezone)  
+Persistent session management (per-port profiles)  
+Anti-detection techniques (stealth mode, script injection)  
+Human behavior simulation (mouse movement, scrolling, typing patterns)  
+Flexible execution modes (incognito, deep-stealth, text-only loading)  
+This version is designed for more complex scenarios such as automation under detection constraints, multi-session simulation, and realistic browsing behavior emulation.  
 
 # Core Framework
 - Sing-box Configuration [config.json](config.json)    
