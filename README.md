@@ -10,7 +10,6 @@ The script supports parallel execution and outputs structured JSON reports for f
 Simple Version [double_ip_simple.py](double_ip_simple.py)   
 A lightweight implementation designed for quick proxy validation and IP checking.
 It focuses on reliability and minimal configuration, making it suitable for basic network testing scenarios.  
-
 Advanced Version [double_ip_advanced.py](double_ip_advanced.py)     
 An extended version with enhanced browser automation capabilities, including:
 Browser fingerprint randomization (User-Agent, viewport, timezone)
